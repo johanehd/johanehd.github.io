@@ -74,7 +74,7 @@ https://fontawesome.com/icons?d=gallery */
     { skillName: "FPGA / VHDL / Verilog", fontAwesomeClassname: "fas fa-microchip" },
     { skillName: "SoC / Bus", fontAwesomeClassname: "fas fa-project-diagram" },
     { skillName: "Verification", fontAwesomeClassname: "fas fa-wave-square" },
-    { skillName: "Hardware Debug", fontAwesomeClassname: "fas fa-search"},
+    { skillName: "Hardware Debug", fontAwesomeClassname: "fas fa-solid fa-bug"},
     { skillName: "Timing / Constraints", fontAwesomeClassname: "fas fa-stopwatch" },
     { skillName: "C (Embedded)", fontAwesomeClassname: "fas fa-code" },
     { skillName: "Python", fontAwesomeClassname: "fab fa-python" },
@@ -171,7 +171,7 @@ To know how to get github key look at readme.md */
 
 const openSource = {
   showGithubProfile: "true",
-  display: true
+  display: false
 };
 
 // Some big projects you have worked on
