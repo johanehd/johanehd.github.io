@@ -20,26 +20,27 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
+  username: "Johan EL HAJJ DIB",
+  title: "Bonjour, je suis Johan",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "Ingénieur FPGA junior passionné par la conception de systèmes numériques fiables, du RTL en VHDL/Verilog jusqu’à l’intégration SoC avec soft-core et logiciel embarqué en C, avec une forte culture de la vérification et de la validation (simulation, tests sur carte)."
   ),
-  resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
-  displayGreeting: true // Set false to hide this section, defaults to true
+
+  resumeLink: "https://drive.google.com/uc?export=download&id=1Mi_OZ5eL_-N1Iqbww7vbXfoPIFBiboXR",
+  displayGreeting: true
 };
 
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+  github: "https://github.com/johanehd",
+  linkedin: "https://www.linkedin.com/in/johan-el-hajj-dib/",
+  gmail: "Johan.ehd@gmail.com",
+
+  gitlab: "",
+  facebook: "",
+  medium: "",
+  stackoverflow: "",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -48,15 +49,21 @@ const socialMediaLinks = {
 // Skills Section
 
 const skillsSection = {
-  title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  title: "Ce que je fais",
+  subTitle:
+    "Conception RTL et intégration SoC, avec un focus sur la vérification/validation (simulation + tests sur cible).",
   skills: [
-    emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+emoji(
+      "⚡ Fiabilité & Systèmes Critiques : Implémentation de mécanismes durcis (TMR, ECC, mitigation SEU) pour le spatial et l'industrie, incluant l'intégration de Soft-cores RISC-V."
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+emoji(
+      "⚡ RTL Design : Maîtrise de la conception VHDL/Verilog éprouvée sur cibles Xilinx, Microchip et Intel (ex: stack UDP/IP personnalisée), avec expérience pratique de l'intégration de bus standards (ex : AXI-Stream, AHB, Wishbone)."
+    ),
+emoji(
+      "⚡ Vérification & Sign-off : Maîtrise avancée de QuestaSim/ModelSim (analyse de waveforms, couverture) et validation des contraintes temporelles (STA/CDC)."
+    ),
+emoji(
+      "⚡ Validation & Bring-up : Tests sur cible réelle et debug matériel (ILA, SmartDebug, Oscilloscope) pour assurer la transition fluide de la simulation au prototype."
     )
   ],
 
@@ -64,58 +71,15 @@ const skillsSection = {
 https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
-    {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
-    },
-    {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
-    },
-    {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
-    },
-    {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
-    },
-    {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
-    },
-    {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
-    },
-    {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    },
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
-    },
-    {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
-    }
+    { skillName: "FPGA / VHDL / Verilog", fontAwesomeClassname: "fas fa-microchip" },
+    { skillName: "SoC / Bus", fontAwesomeClassname: "fas fa-project-diagram" },
+    { skillName: "Verification", fontAwesomeClassname: "fas fa-wave-square" },
+    { skillName: "Hardware Debug", fontAwesomeClassname: "fas fa-search"},
+    { skillName: "Timing / Constraints", fontAwesomeClassname: "fas fa-stopwatch" },
+    { skillName: "C (Embedded)", fontAwesomeClassname: "fas fa-code" },
+    { skillName: "Python", fontAwesomeClassname: "fab fa-python" },
+    { skillName: "Git", fontAwesomeClassname: "fab fa-git-alt" },
+    { skillName: "Linux", fontAwesomeClassname: "fab fa-linux" },
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -126,23 +90,19 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      schoolName: "École d’ingénieur Polytech Paris-Saclay",
+      logo: require("./assets/images/polytechlogo.jpg"),
+      subHeader: "Diplôme d’ingénieur — Électronique et Infortique pour l'Embarqué",
+      duration: "2022-2025",
+      desc:
+        "Formation orientée systèmes embarqués, architecture numérique et conception FPGA.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Approche système : électronique numérique, génie logiciel embarqué et co-conception matériel/logiciel.",
+        "Traitement du signal et des données, acquisition et systèmes communicants.",
+        "Ingénierie des systèmes embarqués et temps réel, microcontrôleurs et architecture SoC.",
+        "Projets pratiques et travaux en laboratoire intégrant FPGA, capteurs, communications et validation.",
+        "Génie logiciel pour l’embarqué : programmation C/C++ et conception de solutions complètes."
       ]
-    },
-    {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
     }
   ]
 };
@@ -153,50 +113,55 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
+      Stack: "RTL Design (VHDL / Verilog)",
+      progressPercentage: "92%" 
     },
     {
-      Stack: "Backend",
-      progressPercentage: "70%"
+      Stack: "FPGA Design Flow",
+      progressPercentage: "85%"
     },
     {
-      Stack: "Programming",
-      progressPercentage: "60%"
+      Stack: "Vérification & Simulation (QuestaSim, VUnit)",
+      progressPercentage: "85%"
     }
   ],
-  displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
+  displayCodersrank: false
 };
 
 // Work experience section
 
 const workExperiences = {
-  display: true, //Set it to true to show workExperiences Section
+  display: true,
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      role: "Ingénieur FPGA / SoC",
+      company: "Watt & Well",
+      companylogo: require("./assets/images/wattandwell_logo.jpg"),
+      date: "2025 — 6 mois (Avril - Octobre)",
+      desc:
+        "Mutation d'une architecture de vol spatiale par l'intégration d'un soft-core RISC-V sur cible Microchip PolarFire. J'ai conçu les modules de liaison et piloté l'insertion du processeur pour transformer un design 100% câblé en une plateforme mixte (Hardware/Software).",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Conception VHDL : Développement de bridges (AHB/Wishbone, AXI-Stream), timers et blocs de contrôle.",
+        "Intégration SoC : Intégration du soft-core sur l'interconnect existant pour le pilotage complet des ressources matérielles du FPGA.",
+        "Vérification : Simulation sous QuestaSim (VUnit) avec testbenchs unitaires et validation d'intégrité de bus.",
+        "Fiabilisation (SEU) : Sécurisation du design par mécanismes de redondance (TMR) et correction d'erreurs (ECC).",
+        "Migration VHDL ➔ C: Portage de la logique de traitement des commandes de l'OBC (On-Board Computer) d'une implémentation VHDL vers une solution logicielle en C embarqué.",
+        "Co-validation HW/SW : Développement de drivers (HAL) en C pour le pilotage des IPs matérielles."
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-    {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "FPGA / Tolérance aux fautes",
+      company: "Universidad Carlos III de Madrid (UC3M)",
+      companylogo: require("./assets/images/Logo_UC3M.png"),
+      date: "2024 — 3 mois (Avril - Juillet)",
+      desc:
+        "Recherche sur la tolérance aux fautes du processeur CV32E40P (PULP Platform) sur cible Xilinx Zynq-7000. Développement de mécanismes de durcissement pour des applications spatiales.",
+      descBullets: [
+        "Conception Verilog : Implémentation de modules de Redondance Modulaire Triple (TMR) et intégration de ECCs pour sécuriser le processeur.",
+        "Vérification : Évaluation de la robustesse face aux SEU via des campagnes d'injection de fautes en simulation et sur carte.",
+        "Analyse de Données (Python) : Développement d'outils de post-traitement pour quantifier l'efficacité des mécanismes de protection mis en place.",
+        "Validation Matérielle : Déploiement sur cible réelle et débogage des signaux critiques avec Xilinx ILA."
+      ]
     }
   ]
 };
@@ -205,185 +170,110 @@ const workExperiences = {
 To know how to get github key look at readme.md */
 
 const openSource = {
-  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
+  showGithubProfile: "true",
+  display: true
 };
 
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "Projects",
+  subtitle: "Quelques réalisations FPGA/SoC orientées",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/eth_prj.png"),
+      projectName: "Acquisition SPI & Stack Ethernet UDP/IP",
+      projectDesc:
+        "Conception intégrale 'From Scratch' en VHDL pur (sans IP tierce) d'une chaîne d'acquisition sur Artix-7. Développement d'un contrôleur maître SPI pour accéléromètre ADXL345 et d'une pile réseau complète (MAC/IPv4/UDP) pour le streaming de données en temps réel vers le PC sans processeur.",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
+          name: "Code (GitHub)",
+          url: "https://github.com/johanehd/fpga-adxl345-ethernet-streaming"
         }
-        //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "http://nextu.se/"
-        }
-      ]
+      image: require("./assets/images/racine-carree.png"),
+      projectName: "Arithmétique FPGA : Calculateur de Racine Carrée",
+      projectDesc:
+        "Conception et implémentation en VHDL de plusieurs architectures de calcul de racine carrée (séquentielle, combinatoire et pipelinée) sur cible Intel Cyclone (Carte DE1), avec comparaison des performances, de la latence et de l’utilisation des ressources FPGA. Vérification fonctionnelle par simulation et validation des résultats.",
+      footerLink: []
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
-// Achievement Section
-// Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
+  title: emoji("Certifications 🏆"),
   subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
-
+    "",
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
+      title: "TOEIC English Test",
       subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
-      footerLink: [
-        {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
-        }
-      ]
-    },
-    {
-      title: "Google Assistant Action",
-      subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
-      footerLink: [
-        {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
-        }
-      ]
-    },
-
-    {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
-      footerLink: [
-        {name: "Certification", url: ""},
-        {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
-        }
-      ]
+        "Niveau B2 — Maîtrise de l'anglais professionnel et technique pour l'ingénierie électronique.",
+      image: require("./assets/images/toeic.jpg"),
+      imageAlt: "Achievement",
+      footerLink: []
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
-// Blogs Section
+// Blogs Section 
 
 const blogSection = {
-  title: "Blogs",
+  title: "Articles",
   subtitle:
-    "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
-  displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
-  blogs: [
-    {
-      url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
-      title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
-      description:
-        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
-    },
-    {
-      url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
-      title: "Why REACT is The Best?",
-      description:
-        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
-    }
-  ],
-  display: true // Set false to hide this section, defaults to true
+    "",
+  displayMediumBlogs: "false",
+  blogs: [],
+  display: false
 };
 
-// Talks Sections
+// Talks Sections 
 
 const talkSection = {
-  title: "TALKS",
-  subtitle: emoji(
-    "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"
-  ),
-
-  talks: [
-    {
-      title: "Build Actions For Google Assistant",
-      subtitle: "Codelab at GDG DevFest Karachi 2019",
-      slides_url: "https://bit.ly/saadpasta-slides",
-      event_url: "https://www.facebook.com/events/2339906106275053/"
-    }
-  ],
-  display: true // Set false to hide this section, defaults to true
+  title: "Présentations",
+  subtitle: emoji("Présentations techniques / talks "),
+  talks: [],
+  display: false
 };
 
-// Podcast Section
+// Podcast Section (
 
 const podcastSection = {
   title: emoji("Podcast 🎙️"),
-  subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
-
-  // Please Provide with Your Podcast embeded Link
-  podcast: [
-    "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
-  ],
-  display: true // Set false to hide this section, defaults to true
+  subtitle: "",
+  podcast: [],
+  display: false
 };
 
 // Resume Section
-const resumeSection = {
-  title: "Resume",
-  subtitle: "Feel free to download my resume",
 
-  // Please Provide with Your Podcast embeded Link
-  display: true // Set false to hide this section, defaults to true
+const resumeSection = {
+  title: "CV",
+  subtitle: "Tu peux télécharger mon CV",
+  display: true
 };
 
 const contactInfo = {
-  title: emoji("Contact Me ☎️"),
+  title: emoji("Me contacter ☎️"),
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+    "Ouvert aux opportunités FPGA/SoC/logiciel embarqué — n’hésitez pas à me contacter.",
+  number: "+33 6 95 36 73 47",
+  email_address: "Johan.ehd@gmail.com"
 };
 
-// Twitter Section
+// Twitter Section (optionnel)
 
 const twitterDetails = {
-  userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  userName: "twitter",
+  display: false
 };
 
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = true;
 
 export {
   illustration,
