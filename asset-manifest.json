@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.9c9afc7d.css",
-    "main.js": "/static/js/main.c310a975.js",
+    "main.js": "/static/js/main.db964180.js",
     "static/css/64.bba8fa55.chunk.css": "/static/css/64.bba8fa55.chunk.css",
     "static/js/64.009f5f43.chunk.js": "/static/js/64.009f5f43.chunk.js",
     "static/css/769.b3cbb36b.chunk.css": "/static/css/769.b3cbb36b.chunk.css",
     "static/js/769.c0dbd4b1.chunk.js": "/static/js/769.c0dbd4b1.chunk.js",
     "static/media/Montserrat-Regular.ttf": "/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
-    "static/media/CV_ELHAJJDIB_Johan_FPGA.pdf": "/static/media/CV_ELHAJJDIB_Johan_FPGA.bbc79de9b627a7b9448f.pdf",
+    "static/media/CV_ELHAJJDIB_Johan_FPGA.pdf": "/static/media/CV_ELHAJJDIB_Johan_FPGA.79757aadbce895d3dee7.pdf",
     "static/media/Agustina.woff": "/static/media/Agustina.eb0c59dda4cc308cba96.woff",
     "static/media/Logo_UC3M.png": "/static/media/Logo_UC3M.5013cb1d6704903dd969.png",
     "static/media/mandelbrot_fpga.jpeg": "/static/media/mandelbrot_fpga.3481a7b4b93a882a5b64.jpeg",
@@ -22,7 +22,7 @@
     "index.html": "/index.html",
     "static/media/talksCardBack.svg": "/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
     "main.9c9afc7d.css.map": "/static/css/main.9c9afc7d.css.map",
-    "main.c310a975.js.map": "/static/js/main.c310a975.js.map",
+    "main.db964180.js.map": "/static/js/main.db964180.js.map",
     "64.bba8fa55.chunk.css.map": "/static/css/64.bba8fa55.chunk.css.map",
     "64.009f5f43.chunk.js.map": "/static/js/64.009f5f43.chunk.js.map",
     "769.b3cbb36b.chunk.css.map": "/static/css/769.b3cbb36b.chunk.css.map",
@@ -30,6 +30,6 @@
   },
   "entrypoints": [
     "static/css/main.9c9afc7d.css",
-    "static/js/main.c310a975.js"
+    "static/js/main.db964180.js"
   ]
 }
